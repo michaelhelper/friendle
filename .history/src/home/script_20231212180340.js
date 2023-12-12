@@ -293,6 +293,7 @@ function get_friends(day) {
                                     ties++;
                                 }
                             }
+                            consol
                         }
                         let todays_result = "Waiting";
                         if (user_has_played && friend_has_played) {
@@ -311,6 +312,27 @@ function get_friends(day) {
                         console.log("Ties: " + ties);
                         console.log("Today's Result: " + todays_result);
                     }
+                    
+            //             // create a div for each friend
+            //             let friend = document.createElement("div");
+            //             friend.style.cssText = "position: absolute; left: 7px; justify-content: start; align-items: start; gap: 7px; display: inline-flex; top: " + (812 + i * 35) + "px";
+            //             // create the inner elements
+            //             friend.id = data[i]["username"];
+            //             let friendName = document.createElement("div");
+            //             friendName.style.cssText = "width: 77px; height: 25px; position: relative";
+            //             // friendName.id = data[i]["username"];
+            //             friendName.innerHTML = '<div style="width: 77px; height: 25px; left: 0; top: 0; position: absolute; display: flex; justify-content: center; align-items: center; text-align: center; color: white; font
+
+            // //loop through the json object and create a div for each friend
+            // for (i = 0; i < data.length; i++) {
+            //     // keep track of head to head score
+            //     let wins = 0;
+            //     let losses = 0;
+            //     let ties = 0;
+            //     let today_score = 0;
+            //     for (i = 0; i < data.length; i++) {
+            //         if 
+            //     }
             }
         )
         .catch(error => {

@@ -39,17 +39,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("ii", $user_id, $friend_id);
     $result = $stmt->execute();
     if ($result) {
-        // add a new row to the friends table with the friend_id as the user_id and the user_id as the friend_id
-        $query = "INSERT INTO friends (user_id, friend_id, is_friend) VALUES (?, ?, 1)";
-        $stmt = $conn->prepare($query);
-        $stmt->bind_param("ii", $friend_id, $user_id);
-        $result = $stmt->execute();
-        if ($result) {
-            echo "success";
-
-        } else {
-            echo "Error: " . $stmt->error;
-        }
+        // add 
+        exit;
     } else {
         echo "Error: " . $stmt->error;
     }

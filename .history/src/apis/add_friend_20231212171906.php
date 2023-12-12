@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $stmt->execute();
     if ($result) {
         // add a new row to the friends table with the friend_id as the user_id and the user_id as the friend_id
-        $query = "INSERT INTO friends (user_id, friend_id, is_friend) VALUES (?, ?, 1)";
+        $query = "INSERT INTO friends (user_id, friend_id, is_friend) VALUES (?, ?)";
         $stmt = $conn->prepare($query);
         $stmt->bind_param("ii", $friend_id, $user_id);
         $result = $stmt->execute();

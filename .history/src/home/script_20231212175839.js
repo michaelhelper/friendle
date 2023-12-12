@@ -276,10 +276,10 @@ function get_friends(day) {
                                     today_score_user = user_data[k]["wordle_score"];
                                 }
                             }
-                            for (k = 0; k < data[i]["wordles"].length; k++) {
-                                if (data[i]["wordles"][k]["wordle_number"] == j) {
+                            for (k = 0; k < data[i]["wordle_data"].length; k++) {
+                                if (data[i]["wordle_data"][k]["wordle_number"] == j) {
                                     friend_has_played = true;
-                                    today_score_friend = data[i]["wordles"][k]["wordle_score"];
+                                    today_score_friend = data[i]["wordle_data"][k]["wordle_score"];
                                 }
                             }
                             if (user_has_played && friend_has_played) {
@@ -306,11 +306,30 @@ function get_friends(day) {
                                 todays_result = "Tie";
                             }
                         }
-                        console.log("Wins: " + wins);
-                        console.log("Losses: " + losses);
-                        console.log("Ties: " + ties);
-                        console.log("Today's Result: " + todays_result);
+                        // add the divs to the screen
+                        
                     }
+                    
+            //             // create a div for each friend
+            //             let friend = document.createElement("div");
+            //             friend.style.cssText = "position: absolute; left: 7px; justify-content: start; align-items: start; gap: 7px; display: inline-flex; top: " + (812 + i * 35) + "px";
+            //             // create the inner elements
+            //             friend.id = data[i]["username"];
+            //             let friendName = document.createElement("div");
+            //             friendName.style.cssText = "width: 77px; height: 25px; position: relative";
+            //             // friendName.id = data[i]["username"];
+            //             friendName.innerHTML = '<div style="width: 77px; height: 25px; left: 0; top: 0; position: absolute; display: flex; justify-content: center; align-items: center; text-align: center; color: white; font
+
+            // //loop through the json object and create a div for each friend
+            // for (i = 0; i < data.length; i++) {
+            //     // keep track of head to head score
+            //     let wins = 0;
+            //     let losses = 0;
+            //     let ties = 0;
+            //     let today_score = 0;
+            //     for (i = 0; i < data.length; i++) {
+            //         if 
+            //     }
             }
         )
         .catch(error => {

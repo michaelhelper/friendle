@@ -251,70 +251,19 @@ function get_friends(day) {
             // parse the data into a json object
             data = JSON.parse(data);
             console.log(data);
-            // get the users wordle data
-            fetch("../apis/user_data.php")
-                .then(response => response.text())
-                .then(user_data => {
-                    // parse the data into a json object
-                    user_data = JSON.parse(user_data);
-                    console.log(user_data);
-                    //loop through the json object and create a div for each friend
-                    for (i = 0; i < data.length; i++) {
-                        // keep track of head to head score
-                        let wins = 0;
-                        let losses = 0;
-                        let ties = 0;
-                        let today_score_user = 0;
-                        let today_score_friend = 0;
-                        let user_has_played = false;
-                        let friend_has_played = false;
-                        for (j = 0; j <= day; j++) {
-                            // check if the user has played the wordle
-                            for (k = 0; k < user_data.length; k++) {
-                                if (user_data[k]["wordle_number"] == j) {
-                                    user_has_played = true;
-                                    today_score_user = user_data[k]["wordle_score"];
-                                }
-                            }
-                            for (k = 0; k < data[i]["wordles"].length; k++) {
-                                if (data[i]["wordles"][k]["wordle_number"] == j) {
-                                    friend_has_played = true;
-                                    today_score_friend = data[i]["wordles"][k]["wordle_score"];
-                                }
-                            }
-                            if (user_has_played && friend_has_played) {
-                                if (today_score_user < today_score_friend) {
-                                    wins++;
-                                }
-                                else if (today_score_user > today_score_friend) {
-                                    losses++;
-                                }
-                                else {
-                                    ties++;
-                                }
-                            }
-                        }
-                        let todays_result = "Waiting";
-                        if (user_has_played && friend_has_played) {
-                            if (today_score_user < today_score_friend) {
-                                todays_result = "Win";
-                            }
-                            else if (today_score_user > today_score_friend) {
-                                todays_result = "Loss";
-                            }
-                            else {
-                                todays_result = "Tie";
-                            }
-                        }
-                        console.log("Wins: " + wins);
-                        console.log("Losses: " + losses);
-                        console.log("Ties: " + ties);
-                        console.log("Today's Result: " + todays_result);
-                    }
-            }
+            //loop through the json object and create a div for each friend
+            for (i = 0; i < data.length; i++) {
+                // keep track of head to head score
+                let wins = 0;
+                let losses = 0;
+                let ties = 0;
+                let today_score = 0;
+                for (i = 0; i < data.length; i++) {
+
+                }
+        }
         )
         .catch(error => {
             console.error("Error:", error);
         });
-    })
 }
