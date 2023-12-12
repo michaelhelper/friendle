@@ -87,7 +87,8 @@ function get_user_data() {
             let lastWordleNumber = data[0]["wordle_number"];
             // parse the data into a json object
             data = JSON.parse(data);
-               for (let i = 0; i < data.length; i++) {
+            console.log(data);
+            for (let i = 0; i < data.length; i++) {
                 // check if the wordle number is the same as the last wordle number
                 if (data[i]["wordle_number"] == lastWordleNumber+1 || (data[i]["wordle_number"] == lastWordleNumber)) {
                     currentStreak++;

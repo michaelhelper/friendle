@@ -87,15 +87,13 @@ function get_user_data() {
             let lastWordleNumber = data[0]["wordle_number"];
             // parse the data into a json object
             data = JSON.parse(data);
-               for (let i = 0; i < data.length; i++) {
+            console.log(data);
+            for (let i = 0; i < data.length; i++) {
                 // check if the wordle number is the same as the last wordle number
-                if (data[i]["wordle_number"] == lastWordleNumber+1 || (data[i]["wordle_number"] == lastWordleNumber)) {
+                if (data[i]["wordle_number"] == lastWordleNumber+1) {
                     currentStreak++;
                 }
-                else {
-                    currentStreak = 1;
-                }
-                lastWordleNumber = data[i]["wordle_number"];
+                else if
                 // check if data[i][wordle_score] is an integer after type conversion
                 if (data[i]["wordle_score"] != 'x' && data[i]["wordle_score"] != 'X') {
                     totalScore += parseInt(data[i]["wordle_score"]);
@@ -103,7 +101,6 @@ function get_user_data() {
                 }
                 totalWordles++;
             }
-            document.getElementById("streak").innerHTML = currentStreak + " Day Streak";
             let averageScore = Math.round((totalScore / totalWordlesCompleted) * 100) / 100;
             let completionPercentage = Math.round((totalWordlesCompleted / totalWordles) * 100);
             document.getElementById("total_wordles_played").innerHTML = totalWordles;
@@ -169,6 +166,9 @@ function friend_requests() {
         .then(data => {
             // parse the data into a json object
             data = JSON.parse(data);
+            console.log(data);
+            console.log("username");
+            console.log(data[0]["username"]);
             let top = 812;
             for (i = 0; i < data.length; i++) {
                 // create a div for each friend request
