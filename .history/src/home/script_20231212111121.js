@@ -108,7 +108,7 @@ function get_user_data() {
 function sign_out() {
     //send request to server
     fetch("../apis/sign_out.php", {
-        method: 'GET'
+        method: 'POST'
     })
         .then(response => response.text())
         .then(data => {

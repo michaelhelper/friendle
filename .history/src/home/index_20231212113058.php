@@ -52,7 +52,7 @@
           <div id="username" class="w-[109px] h-[27px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-base font-bold font-['Inter'] bg-[#AC9534]">Hello, User1</div>
         </div>
         <div class="w-[85px] h-[27px] relative">
-          <button class="w-[85px] h-[27px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-base font-bold font-['Inter'] bg-[#AC9534]" onclick="sign_">Sign Out</button>
+          <button class="w-[85px] h-[27px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-base font-bold font-['Inter'] bg-[#AC9534]" onclick="sign_out()">Sign Out</button>
         </div>
         <div class="w-[97px] h-[27px] relative">
           <button class="w-[97px] h-[27px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-base font-bold font-['Inter'] bg-[#AC9534]" onclick="toggleDarkMode()">Dark Mode</button>
@@ -102,27 +102,25 @@
       <!--Stats-->
       <div class="left-[7px] top-[333px] absolute justify-start items-start gap-1.5 inline-flex">
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">S</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">S</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">T</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#AC9534]">T</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">A</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">A</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">T</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#AC9534]">T</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">S</div>
-        </div>
-        <div class="w-[130px] h-[35px] pl-[25px] relative">
-          <div class="w-[130px] h-[35px] absolute flex justify-center items-center text-center text-white text-md font-bold font-['Inter'] bg-[#AC9534]">10 Day STREAK</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">S</div>
         </div>
       </div>
       <!--Average Score-->
       <div class="left-[7px] top-[399px] absolute justify-start items-start gap-[9px] inline-flex">
         <div class="w-[100px] h-[25px] relative">
+          <div class="w-[100px] h-[25px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#498245]">Average Score</div>
           <div class="w-[100px] h-[25px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#498245]">Average Score</div>
         </div>
         <div class="w-9 h-[25px] relative">
@@ -150,25 +148,25 @@
       <!--Friends-->
       <div class="left-[7px] top-[567px] absolute justify-start items-start gap-[5px] inline-flex">
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">F</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">F</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">R</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#AC9534]">R</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">I</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">I</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">E</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#AC9534]">E</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">N</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">N</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">D</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#AC9534]">D</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">S</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">S</div>
         </div>
       </div>
       <!--Friends List-->

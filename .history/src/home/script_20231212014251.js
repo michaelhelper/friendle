@@ -43,7 +43,7 @@ function add_wordle() {
         wordle = wordle.substring(1);
     }
     wordle = wordle.substring(1);
-    //check if wordle[0] is an integerssssssss
+    //check if wordle[0] is an integers
     wordle_score = wordle[0];
     //while wordle[0] is a number, letter, or whitespace, continue adding to wordle
     while (wordle[0] === '/' || (wordle[0] >= '0' && wordle[0] <= '9') || (wordle[0] >= 'a' && wordle[0] <= 'z') || (wordle[0] >= 'A' && wordle[0] <= 'Z') || wordle[0] == ' ' || wordle[0] == '\n') {
@@ -99,26 +99,6 @@ function get_user_data() {
             document.getElementById("total_wordles_played").innerHTML = totalWordles;
             document.getElementById("average_score").innerHTML = averageScore
             document.getElementById("completion_percentage").innerHTML = completionPercentage + "%";
-        })
-        .catch(error => {
-            console.error("Error:", error);
-        });
-}
-
-function sign_out() {
-    //send request to server
-    fetch("../apis/sign_out.php", {
-        method: 'GET'
-    })
-        .then(response => response.text())
-        .then(data => {
-            //redirect to home page
-            if (data == "success") {
-                window.location.href = "../sign_in ";
-            }
-            else {
-                alert(data);
-            }
         })
         .catch(error => {
             console.error("Error:", error);

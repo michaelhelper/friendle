@@ -107,14 +107,12 @@ function get_user_data() {
 
 function sign_out() {
     //send request to server
-    fetch("../apis/sign_out.php", {
-        method: 'GET'
-    })
+    fetch("../apis/sign_out.php")
         .then(response => response.text())
         .then(data => {
-            //redirect to home page
+            //redirect to sign in page
             if (data == "success") {
-                window.location.href = "../sign_in ";
+                window.location.href = "../sign_in";
             }
             else {
                 alert(data);

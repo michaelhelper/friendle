@@ -156,19 +156,19 @@
           <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">R</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">I</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">I</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">E</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#AC9534]">E</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">N</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">N</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">D</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#AC9534]">D</div>
         </div>
         <div class="w-[35px] h-[35px] relative">
-          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">S</div>
+          <div class="w-[35px] h-[35px] left-0 top-0 absolute flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">S</div>
         </div>
       </div>
       <!--Friends List-->

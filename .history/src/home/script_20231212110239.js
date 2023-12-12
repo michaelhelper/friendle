@@ -104,23 +104,3 @@ function get_user_data() {
             console.error("Error:", error);
         });
 }
-
-function sign_out() {
-    //send request to server
-    fetch("../apis/sign_out.php", {
-        method: 'GET'
-    })
-        .then(response => response.text())
-        .then(data => {
-            //redirect to home page
-            if (data == "success") {
-                window.location.href = "../sign_in ";
-            }
-            else {
-                alert(data);
-            }
-        })
-        .catch(error => {
-            console.error("Error:", error);
-        });
-}
