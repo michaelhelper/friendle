@@ -54,7 +54,7 @@
       <textarea id="wordle" class="w-[200px] h-[125px] mt-[12px] mx-auto relative flex justify-center items-center text-center bg-[#AC9534] bg-opacity-30 text-sm dark:text-white" placeholder="Enter Today's Worldle Results"></textarea>
       <button class="w-[46px] h-[25px] mt-[12px] mx-auto relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]" onclick="add_wordle()">Enter</button>
       <!--Stats-->
-      <div class="pt-[30px] pl-[10px] relative justify-start items-start gap-1.5 flex">
+      <div class="pt-[24px] pl-[10px] relative justify-start items-start gap-1.5 flex">
         <div class="w-[35px] h-[35px] relative flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">S</div>
         <div class="w-[35px] h-[35px] relative flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">T</div>
         <div class="w-[35px] h-[35px] relative flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">A</div>
@@ -78,7 +78,7 @@
         <div id="completion_percentage" class="w-9 h-[25px] relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#498245]">NA</div>
       </div>
       <!--Friends-->
-      <div class="pl-[10px] pt-[30px] relative justify-start items-start gap-[5px] inline-flex">
+      <div class="pl-[10px] pt-[24px] relative justify-start items-start gap-[5px] inline-flex">
         <div class="w-[35px] h-[35px]  relative flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">F</div>
         <div class="w-[35px] h-[35px]  relative flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">R</div>
         <div class="w-[35px] h-[35px]  relative flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">I</div>
