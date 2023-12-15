@@ -1,0 +1,12 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@layer base {
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 25px; /* Updated height to 25px */
+        background-color: white;
+    }
+}
