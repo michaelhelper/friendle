@@ -368,7 +368,7 @@ function get_friends() {
 
                             const scoreDiv = document.createElement("div");
                             scoreDiv.classList.add("w-[60px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#AC9534]");
-                            scoreDiv.textContent = today_score_user + " V.S. " + today_score_friend;
+                            scoreDiv.textContent = wins + "-" + losses + "-" + ties;
 
                             resultsDiv.appendChild(todaysResultsDiv);
                             resultsDiv.appendChild(winDiv);
@@ -384,21 +384,15 @@ function get_friends() {
 
                             const winsDiv = document.createElement("div");
                             winsDiv.classList.add("w-[68px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
-                            winsDiv.textContent = wins + " Wins";
+                            winsDiv.textContent = "20 Wins";
 
                             const lossesDiv = document.createElement("div");
                             lossesDiv.classList.add("w-[77px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
-                            lossesDiv.textContent = losses + " Losses";
-
-                            const tiesDiv = document.createElement("div");
-                            tiesDiv.classList.add("w-[68px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
-                            tiesDiv.textContent = ties + " Ties";
-
+                            lossesDiv.textContent = "20 Losses";
 
                             headToHeadDiv.appendChild(headToHeadTitleDiv);
                             headToHeadDiv.appendChild(winsDiv);
                             headToHeadDiv.appendChild(lossesDiv);
-                            headToHeadDiv.appendChild(tiesDiv);
 
                             // Append the divs to the document body or any other container element
                             const screenDiv = document.getElementById("screen");

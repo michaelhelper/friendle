@@ -278,17 +278,11 @@ function get_friends() {
                                     user_has_played = true;
                                     today_score_user = user_data[k]["wordle_score"];
                                 }
-                                else {
-                                    user_has_played = false;
-                                }
                             }
                             for (k = 0; k < data[i]["wordles"].length; k++) {
                                 if (data[i]["wordles"][k]["wordle_number"] == j) {
                                     friend_has_played = true;
                                     today_score_friend = data[i]["wordles"][k]["wordle_score"];
-                                }
-                                else {
-                                    friend_has_played = false;
                                 }
                             }
                             if (user_has_played && friend_has_played) {
@@ -315,97 +309,10 @@ function get_friends() {
                                 todays_result = "Tie";
                             }
                         }
-                        console.log(user_has_played);
-                        console.log(friend_has_played);
                         console.log("Wins: " + wins);
                         console.log("Losses: " + losses);
                         console.log("Ties: " + ties);
                         console.log("Today's Result: " + todays_result);
-                        // Loop through the data array and create divs for each friend
-                        for (let i = 0; i < data.length; i++) {
-                            const friendDiv = document.createElement("div");
-                            friendDiv.classList.add("pl-[10px]", "pt-[15px]", "relative", "justify-start", "items-start", "gap-[5px]", "inline-flex");
-
-                            const friendNameDiv = document.createElement("div");
-                            friendNameDiv.classList.add("w-[68px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
-                            friendNameDiv.textContent = data[i]["username"];
-
-                            const emailNotificationsDiv = document.createElement("div");
-                            emailNotificationsDiv.classList.add("w-[130px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
-                            emailNotificationsDiv.textContent = "Email Notifications";
-
-                            const label = document.createElement("label");
-                            label.classList.add("switch", "w-[50px]", "h-[25px]", "relative", "flex", "justify-center", "items-center");
-
-                            // Remember to set the checkbox state later
-                            const input = document.createElement("input");
-                            input.id = "email_notification";
-                            input.type = "checkbox";
-                            input.onchange = () => change_email_preferences(data[i]["username"]);
-
-                            const span = document.createElement("span");
-                            span.classList.add("slider");
-
-                            label.appendChild(input);
-                            label.appendChild(span);
-
-                            friendDiv.appendChild(friendNameDiv);
-                            friendDiv.appendChild(emailNotificationsDiv);
-                            friendDiv.appendChild(label);
-
-                            // Append the div to the document body or any other container element
-                            // Create the "Results" div
-                            const resultsDiv = document.createElement("div");
-                            resultsDiv.classList.add("pl-[10px]", "pt-[15px]", "relative", "justify-start", "items-start", "gap-2", "inline-flex");
-
-                            const todaysResultsDiv = document.createElement("div");
-                            todaysResultsDiv.classList.add("w-[97px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#AC9534]");
-                            todaysResultsDiv.textContent = "Todays Results";
-
-                            const winDiv = document.createElement("div");
-                            winDiv.classList.add("w-[33px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#AC9534]");
-                            winDiv.textContent = todays_result;
-
-                            const scoreDiv = document.createElement("div");
-                            scoreDiv.classList.add("w-[60px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#AC9534]");
-                            scoreDiv.textContent = today_score_user + " V.S. " + today_score_friend;
-
-                            resultsDiv.appendChild(todaysResultsDiv);
-                            resultsDiv.appendChild(winDiv);
-                            resultsDiv.appendChild(scoreDiv);
-
-                            // Create the "Head to Head" div
-                            const headToHeadDiv = document.createElement("div");
-                            headToHeadDiv.classList.add("pl-[10px]", "pt-[15px]", "relative", "justify-start", "items-start", "gap-[9px]", "inline-flex");
-
-                            const headToHeadTitleDiv = document.createElement("div");
-                            headToHeadTitleDiv.classList.add("w-[89px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
-                            headToHeadTitleDiv.textContent = "Head to Head";
-
-                            const winsDiv = document.createElement("div");
-                            winsDiv.classList.add("w-[68px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
-                            winsDiv.textContent = wins + " Wins";
-
-                            const lossesDiv = document.createElement("div");
-                            lossesDiv.classList.add("w-[77px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
-                            lossesDiv.textContent = losses + " Losses";
-
-                            const tiesDiv = document.createElement("div");
-                            tiesDiv.classList.add("w-[68px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
-                            tiesDiv.textContent = ties + " Ties";
-
-
-                            headToHeadDiv.appendChild(headToHeadTitleDiv);
-                            headToHeadDiv.appendChild(winsDiv);
-                            headToHeadDiv.appendChild(lossesDiv);
-                            headToHeadDiv.appendChild(tiesDiv);
-
-                            // Append the divs to the document body or any other container element
-                            const screenDiv = document.getElementById("screen");
-                            screenDiv.appendChild(friendDiv);
-                            screenDiv.appendChild(resultsDiv);
-                            screenDiv.appendChild(headToHeadDiv);
-                        }
                     }
             }
         )
@@ -415,12 +322,11 @@ function get_friends() {
     })
 }
 // function to change email preferences
-function change_email_preferences(friend_username) {
-    let email_notification = document.getElementById("email_notification").checked;
+function change_email_preferences() {
+    let email_preferences = document.getElementById("email_notifications").value;
     const formData = new FormData();
-    formData.append("email_notification", email_notification);
-    formData.append("friend_username", friend_username);
-    fetch("../apis/email_notification.php", {
+    formData.append("email_notifications", email_preferences);
+    fetch("../apis/email_notifications.php", {
         method: "POST",
         body: formData
     })
@@ -432,10 +338,11 @@ function change_email_preferences(friend_username) {
                 alert(data);
             }
             else {
-                alert("Email notifications updated!");
+                alert("Email preferences updated!");
             }
         })
         .catch(error => {
             console.error("Error:", error);
         });
+    document.getElementById("email_preferences").value = "";
 }

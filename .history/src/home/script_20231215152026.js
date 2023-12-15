@@ -398,7 +398,7 @@ function get_friends() {
                             headToHeadDiv.appendChild(headToHeadTitleDiv);
                             headToHeadDiv.appendChild(winsDiv);
                             headToHeadDiv.appendChild(lossesDiv);
-                            headToHeadDiv.appendChild(tiesDiv);
+                            
 
                             // Append the divs to the document body or any other container element
                             const screenDiv = document.getElementById("screen");

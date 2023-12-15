@@ -88,28 +88,27 @@
         <div class="w-[35px] h-[35px]  relative flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">S</div>
       </div>
       <!--Friends List-->
-      <!-- <div class="pl-[10px] pt-[15px] relative justify-start items-start gap-[5px] inline-flex">
+      <div class="pl-[10px] pt-[15px] relative justify-start items-start gap-[5px] inline-flex">
         <div class="w-[68px] h-[25px]  relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#498245]">Friend #1</div>
         <div class="w-[130px] h-[25px]  relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#498245]">Email Notifications</div>
         <label class="switch w-[50px] h-[25px]  relative flex justify-center items-center">
-        <input id="email_notification" type="checkbox" onchange="change_email_preferences('test')">
+        <input id="email_notifications" type="checkbox" onchange="change_email_preferences("test')">
         <span class="slider"></span>
         </label>
-      </div> -->
+      </div>
       <!--Results-->
-      <!-- <div class="pl-[10px] pt-[15px] relative justify-start items-start gap-2 inline-flex">
+      <div class="pl-[10px] pt-[15px] relative justify-start items-start gap-2 inline-flex">
         <div class="w-[97px] h-[25px]  relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#AC9534]">Todays Results</div>
         <div class="w-[33px] h-[25px]  relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#AC9534]">Win</div>
         <div class="w-[60px] h-[25px]  relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#AC9534]">2 V.S. 3 </div>
-      </div> -->
+      </div>
       <!--Head to Head-->
-      <!-- <div class="pl-[10px] pt-[15px] relative justify-start items-start gap-[9px] inline-flex">
+      <div class="pl-[10px] pt-[15px] relative justify-start items-start gap-[9px] inline-flex">
         <div class="w-[89px] h-[25px]  relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#498245]">Head to Head</div>
         <div class="w-[68px] h-[25px]  relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#498245]">20 Wins</div>
         <div class="w-[77px] h-[25px]  relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#498245]">20 Losses</div>
-      </div> -->
+      </div>
       <!--Add Friends-->
-
       <div class="pl-[10px] pt-[15px] relative justify-start items-start gap-2 inline-flex">
         <button class="w-[77px] h-[25px] relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#AC9534]" onclick="add_friend()">Add Friend</button>
         <input id="friend" class="w-[167px] h-[25px]  relative flex justify-center items-center text-center dark:text-white bg-opacity-30 text-xs font-bold font-['Inter'] bg-[#AC9534]" placeholder="Enter Username Here"></input>
