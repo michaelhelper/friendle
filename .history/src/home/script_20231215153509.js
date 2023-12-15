@@ -313,8 +313,9 @@ function get_friends() {
                             }
                         }
                         // Loop through the data array and create divs for each friend
+                        for (let i = 0; i < data.length; i++) {
                             const friendDiv = document.createElement("div");
-                            friendDiv.classList.add("pl-[10px]", "pt-[30px]", "relative", "justify-start", "items-start", "gap-[5px]", "inline-flex");
+                            friendDiv.classList.add("pl-[10px]", "pt-[15px]", "relative", "justify-start", "items-start", "gap-[5px]", "inline-flex");
 
                             const friendNameDiv = document.createElement("div");
                             friendNameDiv.classList.add("w-[68px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
@@ -391,7 +392,7 @@ function get_friends() {
                             headToHeadDiv.appendChild(tiesDiv);
 
                             // Append the divs to the document body or any other container element
-                            const screenDiv = document.getElementById("friends");
+                            const screenDiv = document.getElementById("screen");
                             screenDiv.appendChild(friendDiv);
                             screenDiv.appendChild(resultsDiv);
                             screenDiv.appendChild(headToHeadDiv);

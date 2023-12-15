@@ -314,7 +314,7 @@ function get_friends() {
                         }
                         // Loop through the data array and create divs for each friend
                             const friendDiv = document.createElement("div");
-                            friendDiv.classList.add("pl-[10px]", "pt-[30px]", "relative", "justify-start", "items-start", "gap-[5px]", "inline-flex");
+                            friendDiv.classList.add("pl-[10px]", "pt-[25px]", "relative", "justify-start", "items-start", "gap-[5px]", "inline-flex");
 
                             const friendNameDiv = document.createElement("div");
                             friendNameDiv.classList.add("w-[68px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");

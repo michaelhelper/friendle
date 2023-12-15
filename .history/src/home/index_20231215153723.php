@@ -87,8 +87,7 @@
         <div class="w-[35px] h-[35px]  relative flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#AC9534]">D</div>
         <div class="w-[35px] h-[35px]  relative flex justify-center items-center text-center text-white text-lg font-bold font-['Inter'] bg-[#498245]">S</div>
       </div>
-      <!--Friend Requests-->
-      <div id="friends"></div>
+      
 
       <div class="pl-[10px] pt-[15px] relative justify-start items-start gap-2 inline-flex">
         <button class="w-[77px] h-[25px] relative flex justify-center items-center text-center text-white text-xs font-bold font-['Inter'] bg-[#AC9534]" onclick="add_friend()">Add Friend</button>

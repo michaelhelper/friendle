@@ -4,6 +4,7 @@
     var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
     var oneDay = 1000 * 60 * 60 * 24;
     var day = Math.floor(diff / oneDay);
+    console.log('Days since first wordle: ' + day);
 
     window.onload = function() {
     // initialize dark mode toggle to current theme
@@ -252,12 +253,14 @@ function get_friends() {
         .then(data => {
             // parse the data into a json object
             data = JSON.parse(data);
+            console.log(data);
             // get the users wordle data
             fetch("../apis/user_data.php")
                 .then(response => response.text())
                 .then(user_data => {
                     // parse the data into a json object
                     user_data = JSON.parse(user_data);
+                    console.log(user_data);
                     //loop through the json object and create a div for each friend
                     for (i = 0; i < data.length; i++) {
                         // keep track of head to head score
@@ -313,8 +316,9 @@ function get_friends() {
                             }
                         }
                         // Loop through the data array and create divs for each friend
+                        for (let i = 0; i < data.length; i++) {
                             const friendDiv = document.createElement("div");
-                            friendDiv.classList.add("pl-[10px]", "pt-[30px]", "relative", "justify-start", "items-start", "gap-[5px]", "inline-flex");
+                            friendDiv.classList.add("pl-[10px]", "pt-[15px]", "relative", "justify-start", "items-start", "gap-[5px]", "inline-flex");
 
                             const friendNameDiv = document.createElement("div");
                             friendNameDiv.classList.add("w-[68px]", "h-[25px]", "relative", "flex", "justify-center", "items-center", "text-center", "text-white", "text-xs", "font-bold", "font-['Inter']", "bg-[#498245]");
@@ -391,10 +395,11 @@ function get_friends() {
                             headToHeadDiv.appendChild(tiesDiv);
 
                             // Append the divs to the document body or any other container element
-                            const screenDiv = document.getElementById("friends");
+                            const screenDiv = document.getElementById("screen");
                             screenDiv.appendChild(friendDiv);
                             screenDiv.appendChild(resultsDiv);
                             screenDiv.appendChild(headToHeadDiv);
+                        }
                     }
             }
         )
