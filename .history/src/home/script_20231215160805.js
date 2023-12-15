@@ -312,6 +312,7 @@ function get_friends() {
                                 todays_result = "Tie";
                             }
                         }
+                        // Loop through the data array and create divs for each friend
                             const friendDiv = document.createElement("div");
                             friendDiv.classList.add("pl-[10px]", "pt-[30px]", "relative", "justify-start", "items-start", "gap-[5px]", "inline-flex");
 
@@ -330,10 +331,7 @@ function get_friends() {
                             const input = document.createElement("input");
                             input.id = "email_notification";
                             input.type = "checkbox";
-                            let username = data[i]["username"];
-                            input.onclick = function () {
-                                change_email_preferences(username);
-                            };
+                            input.onchange = () => change_email_preferences(data[i]["username"]);
 
                             const span = document.createElement("span");
                             span.classList.add("slider");

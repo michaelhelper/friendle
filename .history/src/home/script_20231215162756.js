@@ -330,8 +330,8 @@ function get_friends() {
                             const input = document.createElement("input");
                             input.id = "email_notification";
                             input.type = "checkbox";
-                            let username = data[i]["username"];
                             input.onclick = function () {
+                                let username = data[i]["username"];
                                 change_email_preferences(username);
                             };
 

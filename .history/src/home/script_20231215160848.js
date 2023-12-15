@@ -1,3 +1,4 @@
+import { change_email_preferences } from "../apis/user_data.js";
     // get the day of the year starting from 2000
     var now = new Date();
     var start = new Date(2021, 5, 19);
@@ -330,10 +331,7 @@ function get_friends() {
                             const input = document.createElement("input");
                             input.id = "email_notification";
                             input.type = "checkbox";
-                            let username = data[i]["username"];
-                            input.onclick = function () {
-                                change_email_preferences(username);
-                            };
+                            input.onchange = () => change_email_preferences(data[i]["username"]);
 
                             const span = document.createElement("span");
                             span.classList.add("slider");
