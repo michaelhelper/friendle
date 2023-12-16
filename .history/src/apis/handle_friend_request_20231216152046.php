@@ -50,13 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $conn->prepare($query);
             $stmt->bind_param("ii", $user_id, $friend_id);
             $result = $stmt->execute();
-            if ($result) {
-                // return success
-                echo "success";
-                exit;
-            } else {
-                echo "Error: " . $stmt->error;
-            }
+            
             exit;
         } else {
             echo "Error: " . $stmt->error;

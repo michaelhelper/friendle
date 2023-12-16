@@ -45,18 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bind_param("ii", $friend_id, $user_id);
         $result = $stmt->execute();
         if ($result) {
-            // delete the other friend request from the friends table
-            $query = "DELETE FROM friends WHERE user_id = ? AND friend_id = ?";
-            $stmt = $conn->prepare($query);
-            $stmt->bind_param("ii", $user_id, $friend_id);
-            $result = $stmt->execute();
-            if ($result) {
-                // return success
-                echo "success";
-                exit;
-            } else {
-                echo "Error: " . $stmt->error;
-            }
+            // delete the other 
             exit;
         } else {
             echo "Error: " . $stmt->error;

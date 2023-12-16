@@ -234,6 +234,8 @@ function friend_requests() {
 function handle_friend_request(action, friend) {
     //get the friends parent div
     friend = friend.substring(0, friend.length - 1);
+    console.log(friend);
+    console
     const formData = new FormData();
     formData.append("friend", friend);
     formData.append("action", action);
@@ -254,6 +256,7 @@ function handle_friend_request(action, friend) {
         .catch(error => {
             console.error("Error:", error);
         });
+    //reload the page
     window.location.reload();
 }
 
