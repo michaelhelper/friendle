@@ -803,6 +803,14 @@ input:checked + .slider:before {
   margin-left: 20px;
 }
 
+.mt-\[15px\] {
+  margin-top: 15px;
+}
+
+.ml-\[9px\] {
+  margin-left: 9px;
+}
+
 .flex {
   display: flex;
 }
@@ -991,6 +999,26 @@ input:checked + .slider:before {
   width: 50px;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[3px\] {
+  width: 3px;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
+.w-\[325px\] {
+  width: 325px;
+}
+
+.w-\[315px\] {
+  width: 315px;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1047,6 +1075,14 @@ input:checked + .slider:before {
   gap: 9px;
 }
 
+.gap-\[150px\] {
+  gap: 150px;
+}
+
+.gap-\[100px\] {
+  gap: 100px;
+}
+
 .bg-\[\#498245\] {
   --tw-bg-opacity: 1;
   background-color: rgb(73 130 69 / var(--tw-bg-opacity));
@@ -1060,6 +1096,16 @@ input:checked + .slider:before {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffffff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#6b3b3b\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 59 59 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-30 {
@@ -1123,6 +1169,58 @@ input:checked + .slider:before {
   padding-top: 30px;
 }
 
+.pt-\[45px\] {
+  padding-top: 45px;
+}
+
+.pl-\[9px\] {
+  padding-left: 9px;
+}
+
+.pt-\[329px\] {
+  padding-top: 329px;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[50\] {
+  padding-top: 50;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
+}
+
+.pl-\[40px\] {
+  padding-left: 40px;
+}
+
+.pl-\[35px\] {
+  padding-left: 35px;
+}
+
+.pl-\[37px\] {
+  padding-left: 37px;
+}
+
+.pl-\[38px\] {
+  padding-left: 38px;
+}
+
+.pr-\[10px\] {
+  padding-right: 10px;
+}
+
+.pb-\[15px\] {
+  padding-bottom: 15px;
+}
+
+.pb-\[10px\] {
+  padding-bottom: 10px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1167,6 +1265,18 @@ input:checked + .slider:before {
 
 .opacity-75 {
   opacity: 0.75;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-\[100\] {
+  opacity: 100;
+}
+
+.opacity-\[100\%\] {
+  opacity: 100%;
 }
 
 :is(.dark .dark\:bg-black) {
