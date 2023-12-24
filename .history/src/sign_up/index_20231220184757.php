@@ -1,0 +1,100 @@
+<?php
+  // Check if the user is logged in, if not then redirect to login page
+  if(isset($_COOKIE['user_id'])) {
+    header("Location: ../home");
+    exit;
+  }
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign Up</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="flex justify-center bg-white dark:bg-black">
+    <div class="w-[393px] h-[852px] relative bg-white">
+      <!--Title On Screen-->
+      <div class="pt-[15px] justify-center items-center gap-1.5 flex relative">
+        <div class="w-[42px] h-[43px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#498245] ">F</div>
+        <div class="w-[42px] h-[43px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#AC9534]">R</div>
+        <div class="w-[42px] h-[43px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#498245]">I</div>
+        <div class="w-[42px] h-[43px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#AC9534]">E</div>
+        <div class="w-[42px] h-[43px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#498245]">N</div>
+        <div class="w-[42px] h-[43px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#AC9534]">D</div>
+        <div class="w-[42px] h-[43px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#498245]">L</div>
+        <div class="w-[42px] h-[43px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#AC9534]">E</div>
+      </div>
+      <!--Sign In-->
+      <div class="pt-[45px] relative justify-center items-center gap-1.5 flex">
+        <div class="w-[47.85px] h-[45px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#498245]">S</div>
+        <div class="w-[47.85px] h-[45px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#AC9534]">I</div>
+        <div class="w-[47.85px] h-[45px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#498245]">G</div>
+        <div class="w-[47.85px] h-[45px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#AC9534]">N</div>
+        <div class="w-[47.85px] h-[45px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#ffffff]"></div>
+        <div class="w-[47.85px] h-[45px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#AC9534]">U</div>
+        <div class="w-[47.85px] h-[45px] relative flex justify-center items-center text-center text-white text-xl font-bold font-['Inter'] bg-[#498245]">P</div>
+      </div>
+      <!--Username-->
+      <div class="pt-[45px] relative flex justify-center items-center gap-1.5">
+          <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">U</div>
+          <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">S</div>
+          <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">E</div>
+          <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">R</div>
+          <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">N</div>
+          <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">A</div>
+          <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">M</div>
+          <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">E</div>
+      </div>
+      <input class="w-[315px] h-[31px] mt-[15px] pl-[10px] m-auto relative flex justify-center items-center bg-[#AC9534] bg-opacity-50" id="usernameInput"></input>
+      <!--Password-->
+      <div class="pt-[45px] relative justify-center items-center gap-1.5 flex">
+            <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">P</div>
+            <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">A</div>
+            <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">S</div>
+            <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">S</div>
+            <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">W</div>
+            <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">O</div>
+            <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">R</div>
+            <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">D</div>
+        </div>
+      <input class= "w-[315px] h-[31px] mt-[15px] pl-[10px] m-auto relative flex justify-center items-center bg-[#AC9534] bg-opacity-50" id="passwordInput" type="password"></input>
+      <!--Confirm-->
+            <!--Password-->
+            <div class="pt-[45px] relative justify-start items-start gap-1.5 flex pl-[38px]">
+              <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">C</div>
+              <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">O</div>
+              <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">N</div>
+              <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">F</div>
+              <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">I</div>
+              <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">R</div>
+              <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">M</div>
+          </div>
+        <input class= "w-[315px] h-[31px] mt-[15px] pl-[10px] m-auto relative flex justify-center items-center bg-[#AC9534] bg-opacity-50" id="confirmPasswordInput" type="password"></input>
+      <!--Email-->
+      <div class="pt-[45px] relative justify-start items-start gap-1.5 flex pl-[38px]">
+        <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">E</div>
+        <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">M</div>
+        <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">A</div>
+        <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">I</div>
+        <div class="w-[34.14px] h-[37px] relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]">L</div>
+      </div>
+      <input class= "w-[315px] h-[31px] mt-[15px] pl-[10px] m-auto relative flex justify-center items-center bg-[#AC9534] bg-opacity-50" id="emailInput"></input>
+
+
+      <!--Sign In Button-->
+      <div class="pt-[45px] relative justify-center items-center gap-[150px] flex">
+        <button class="w-[82px] h-[35px] left-0 top-0 relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] bg-[#498245]" id="loginBtn" onclick="callSignUpWithInputValues()">Sign Up</button>
+        <button class="w-[82px] h-[35px] left-0 top-0 relative flex justify-center items-center text-center text-white text-sm font-bold font-['Inter'] opacity-75 bg-[#498245]" onclick="sign_in()">Sign In</button>
+      </div>
+
+    </div>
+  </body>
+</html>
+<!--Write php code to query the users database and set a cookie with the user id of the user--> 
